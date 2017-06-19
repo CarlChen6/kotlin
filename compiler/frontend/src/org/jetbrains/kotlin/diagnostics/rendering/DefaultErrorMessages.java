@@ -718,6 +718,9 @@ public class DefaultErrorMessages {
                 "Infix call corresponds to a dot-qualified call ''{0}.{1}({2})'' which is not allowed on a nullable receiver ''{0}''. " +
                 "Use ''?.''-qualified call instead",
                 STRING, STRING, STRING);
+        MAP.put(UNSAFE_OPERATOR_CALL,
+                "Operator call corresponds to a dot-qualified call ''{0}.{1}({2})'' which is not allowed on a nullable receiver ''{0}''.",
+                STRING, STRING, STRING);
 
         MAP.put(OVERLOAD_RESOLUTION_AMBIGUITY, "Overload resolution ambiguity: {0}", AMBIGUOUS_CALLS);
         MAP.put(NONE_APPLICABLE, "None of the following functions can be called with the arguments supplied: {0}", AMBIGUOUS_CALLS);
